@@ -1,6 +1,10 @@
 {
    "version": 2,
    "name": "cors-now",
+	"functions": {
+    "src/index.js": {
+      "maxDuration": 30 // This function can run for a maximum of 30 seconds
+    },
    "builds": [
       { "src": "index.js", "use": "@vercel/node" }
    ],
