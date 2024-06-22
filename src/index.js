@@ -40,7 +40,7 @@ module.exports = async (req, res) => {
     } else {
         // proxy and respond
         const endpoint = req.url.substring(1);
-        const parsed = parse(endpoint);
+        const parsed = await parse(endpoint);
         let mod;
         if ('http:' === parsed.protocol) {
             mod = http;
@@ -76,7 +76,7 @@ module.exports = async (req, res) => {
         // it and re-proxy to this CORS proxy
         let location = res.getHeader('location');
         if (location) {
-            const locationParsed = parse(location);
+            const locationParsed = await parse(location);
             if (
                 !('http:' === locationParsed.protocol ||
                     'https:' === locationParsed.protocol)
