@@ -1,10 +1,6 @@
 {
    "version": 2,
    "name": "cors-now",
-    "functions": {
-    "src/index.js": {
-      "maxDuration": 60
-    }},
    "builds": [
       { "src": "index.js", "use": "@vercel/node" }
    ],
