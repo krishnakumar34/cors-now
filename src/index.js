@@ -95,7 +95,7 @@ module.exports = async (req, res) => {
     }
 };
 
-function get(mod, parsed) {
+async function get(mod, parsed) {
     return await new Promise((resolve, reject) => {
         mod.get(parsed, resolve).once('error', reject);
     });
