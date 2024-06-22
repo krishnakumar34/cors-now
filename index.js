@@ -8,6 +8,7 @@ const access = require('access-control');
 const { readFile } = require('fs-promise');
 
 const cors = access();
+export const maxDuration = 50 // 
 
 const hopByHopHeaders = new Set([
     'connection',
