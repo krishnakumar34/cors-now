@@ -100,4 +100,4 @@ function get(mod, parsed) {
     return new Promise((resolve, reject) => {
         mod.get(parsed, resolve).once('error', reject);
     });
-																			 }
+}																			 }
