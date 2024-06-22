@@ -10,6 +10,7 @@ const { readFile } = require('fs-promise');
 const cors = access();
 export const maxDuration = 180 // 
 
+
 const hopByHopHeaders = new Set([
     'connection',
     'keep-alive',
