@@ -3,7 +3,7 @@
    "name": "cors-now",
    "builds": [
     {
-      "src": "build/index.js",
+      "src": "src/index.js",
       "use": "@vercel/node",
       "config": {
         "includeFiles": [
