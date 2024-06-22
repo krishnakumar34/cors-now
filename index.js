@@ -9,6 +9,7 @@ const { readFile } = require('fs-promise');
 
 const cors = access();
 
+
 const hopByHopHeaders = new Set([
     'connection',
     'keep-alive',
