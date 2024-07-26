@@ -18,6 +18,14 @@
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect"
   },
+  "keywords": [
+    "vercel",
+    "serverless"
+  ],
+  "dependencies": {
+    "express": "^4.19.2",
+    "helmet": "^7.1.0"
+  },
   "files": [
     "index.js",
     "readme.md"
