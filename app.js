@@ -1,7 +1,7 @@
 const express = require('express');
 const helmet = require('helmet');
 const { ErrorResponseObject } = require('./common/http');
-const routes = require('./routes');
+const routes = require('./index');
 
 const app = express();
 
