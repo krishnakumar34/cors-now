@@ -2,7 +2,7 @@
   "name": "cors-now",
   "private": true,
   "version": "1.0.0",
-  "main":    "app.js"
+  "main":    "app.js",
   "description": "reverse proxy with CORS headers.",
   "license": "MIT",
   "repository": "hemanth/cors-now",
